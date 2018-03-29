@@ -1,0 +1,52 @@
+{
+  "name": "nest-ws",
+  "version": "0.0.1",
+  "description": "A ws WebSocket Adapter for Nest.js",
+  "license": "MIT",
+  "repository": "shellscape/nest-ws",
+  "author": "Andrew Powell <andrew@shellscape.org>",
+  "homepage": "https://github.com/shellscape/nest-ws",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=9"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "nest",
+    "nestjs",
+    "ws",
+    "WebSocket",
+    "WebSockets",
+    "adapter"
+  ],
+  "peerDependencies": {
+    "@nestjs/common": "^4.6.6",
+    "@nestjs/websockets": "^4.6.6",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.7"
+  },
+  "dependencies": {
+    "ws": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^4.6.6",
+    "@nestjs/core": "^4.6.6",
+    "@nestjs/websockets": "^4.6.6",
+    "@types/node": "^9.6.1",
+    "@types/reflect-metadata": "^0.1.0",
+    "@types/socket.io": "1.4.29",
+    "@types/ws": "^4.0.1",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.7",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  }
+}
